@@ -2,7 +2,7 @@ from setuptools import find_packages, setup
 
 setup(
     name='prlps_typo',
-    version='0.0.2',
+    version='0.0.3',
     author='prolapser',
     packages=find_packages(),
     url='https://github.com/gniloyprolaps/prlps_typo',
