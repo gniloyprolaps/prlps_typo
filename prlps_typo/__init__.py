@@ -38,8 +38,8 @@ def get_typograf() -> str | None:
     if not TYPOGRAF_PATH.exists():
         code = fetch(TYPOGRAF_URL)
         if code:
-            TYPOGRAF_PATH.write_text(code)
-    return TYPOGRAF_PATH.read_text()
+            TYPOGRAF_PATH.write_text(code, encoding='utf-8')
+    return TYPOGRAF_PATH.read_text(encoding='utf-8')
 
 
 def typograf(text: str) -> str:
